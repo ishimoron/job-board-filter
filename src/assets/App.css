@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f3f3f3;
+}
+
+.badge {
+    background: #edf6f5;
+    color: #2d9d97;
+    font-weight: 600;
+    margin-left: 15px;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg img {
+    height: 20vh;
+    margin-bottom: -35px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.search {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.mt-5 {
+    margin-top: 1rem;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-left: 5px solid transparent;
+    transition: border-left 0.3s ease;
+}
+
+.card-wrapper:hover {
+
+    border-left: 5px solid #2d9d97;
+}
+
+.company-logo img {
+    width: 80%;
+}
+
+.company-text-top {
+    display: flex;
+}
+
+.company-name {
+    color: #2d9d97;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.company-badge__featured {
+    background: #2e3c3b;
+    border-radius: 10px;
+    padding: 4px 7px;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.company-badge__new {
+    background: #55a09c;
+    border-radius: 10px;
+    padding: 4px 7px;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.position {
+    margin: 10px 0px;
+    color: #2d9d97;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.date {
+    color: #787f7e;
+    font-weight: 300;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contract {
+    color: #787f7e;
+    font-weight: 300;
+    position: relative;
+    margin: 0 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location {
+    color: #787f7e;
+    font-weight: 300;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.date:after {
+    content: '.';
+    position: absolute;
+    bottom: -1px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.contract:after {
+    content: '.';
+    position: absolute;
+    bottom: -1px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.languages {
+    margin-left: 50px;
+}
+
+.languages button {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: #edf6f5;
+    color: #2d9d97;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.languages button:hover {
+    background: #5ba6a2;
+    color: #fff;
+}
+
+.badge-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1065px) {
+
+    /* place here CSS for when the screen is less than 1000px wide */
+    .languages button {
+        margin-top: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    /* place here CSS for when the screen is less than 1000px wide */
+    .badge-wrapper {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 25px;
+    }
+
+    .languages {
+        margin-left: 0;
+    }
+
+    .languages button {}
+
+    .company-logo {
+        position: absolute;
+        top: -35px;
+        left: 15px;
+    }
+
+    .card-wrapper {
+        margin-top: 50px;
+        padding: 20px 15px;
+    }
+
+    .company-logo img {
+        width: 70%;
+    }
+}
